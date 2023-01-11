@@ -54,7 +54,7 @@ Live Server
 ### Setup
 
 Clone this repository to your desired folder: 
-git@github.com:Gmanlove/Hello-Microverse.git
+git@github.com:Gmanlove/My-Portfolio.git
 
 
 ## 👥 Authors <a name="authors"></a>

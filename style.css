@@ -9,7 +9,11 @@
 body {
   max-width: 100%;
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #e5e5e5;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
 header {
@@ -52,6 +56,13 @@ header {
 }
 
 section {
+  background-repeat: no-repeat;
+  padding: 5rem 1.25rem 15rem;
+  background-color: #fff;
+  background-position-x: 100%;
+}
+
+.image {
   border-bottom-left-radius: 80px;
   background-image: url("images/hero_bg.png");
   background-repeat: no-repeat;
@@ -92,11 +103,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-left: 3%;
+  padding-left: 2%;
 }
 
 .intro-items a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -130,4 +141,220 @@ section {
 
 .list-items li {
   list-style: none;
+}
+
+/* card section */
+
+.work-cards {
+  background: #e5e5e5;
+  display: grid;
+  gap: 24px;
+}
+
+.project-card {
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.project-card:nth-of-type(2),
+.project-card:nth-of-type(3),
+.project-card:nth-of-type(4) {
+  margin-top: 85px;
+}
+
+.card-lists {
+  display: flex;
+  padding: 8px 0;
+  width: 100%;
+  gap: 12px;
+  align-items: center;
+}
+
+.card-lists .canopy {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: 16px;
+  color: #344563;
+  font-size: 13px;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card-lists p {
+  font-size: 13px;
+  color: #7a869a;
+  padding: 8px 0;
+  font-weight: 600;
+  line-height: 16px;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+}
+
+.round {
+  width: 10px;
+  height: 10px;
+  background-color: #c1c7d0;
+  border-radius: 500%;
+}
+
+.card-note p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card-skills {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+  flex-direction: row;
+}
+
+.card-skills li {
+  padding: 4px 12px;
+  border-radius: 8px;
+  background-color: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 24px;
+  padding: 12px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: transparent;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+/* -----------About Section------------ */
+.about {
+  border-top-right-radius: 80px;
+}
+
+.span {
+  display: inline-block;
+}
+
+.knowdge {
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.know-text {
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  color: #000;
+  font-weight: 500;
+  width: 100%;
+  padding: 24px 42px 36px 0;
+}
+
+.self {
+  margin: 12px 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.about-text {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  background: #fff;
+}
+
+ul.list-items.skill-items {
+  margin-top: 12px;
+  gap: 24px;
+}
+
+.job-text {
+  font-size: 15px;
+  color: #253858;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.know-line {
+  font-weight: 500;
+  color: #5e6c84;
+  transform: rotate(90deg);
+}
+
+.know-list {
+  align-items: center;
+  padding: 24px;
+  gap: 12px;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.know-sec {
+  gap: 12px;
+}
+
+.arrow-line {
+  color: #dfe1e6;
+}
+
+.card-tag {
+  color: #6070ff;
 }

@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+
 My Portfolio project
 
 This is an Html and Css My Portfolio project
@@ -64,10 +64,7 @@ git@github.com:Gmanlove/My-Portfolio.git
 
 - GitHub: [Gmanlove](https://github.com/Gmanlove)
 
-- *[future_feature_1]* In the future I will add work section.
-- *[future_feature_2]* I will add about section.
-- *[future_feature_3]* Contact section.
-- *[future_feature_4]* Desktop version design.
+- *[future_feature_1]* In the future I will add desktop version design.
 - *[future_feature_5]* Refactoring the work section dynamically with Javascript.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>

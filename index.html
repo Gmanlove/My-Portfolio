@@ -14,6 +14,17 @@
         <div class="nav-logo">
           <a href="#">My Logo </a>
         </div>
+
+        <!---------- Desktop menu-------------->
+
+        <div class="desktop-menu">
+          <ul class="flex">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+    
         <nav class="nav-links">
           <div class="ambuger">
             <span class="bar"></span>
@@ -40,21 +51,21 @@
             <div class="intro-connect">
               <ul class="list-items">
                 <li>
-                  <a href="#"> <img src="images/twitter.png" alt="" /> </a>
+                  <a href="#"> <img src="images/twitter.png" alt="twitter image" /> </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="images/Linkedin icon.svg" alt="" />
+                    <img src="images/Linkedin icon.svg" alt="Linkedin" />
                   </a>
                 </li>
                 <li>
-                  <a href="#"> <img src="images/medium.png" alt="" /> </a>
+                  <a href="#"> <img src="images/medium.png" alt="medium" /> </a>
                 </li>
                 <li>
-                  <a href="#"> <img src="images/github.png" alt="" /> </a>
+                  <a href="#"> <img src="images/github.png" alt="github" /> </a>
                 </li>
                 <li>
-                  <a href="#"> <img src="images/angellist.png" alt="" /> </a>
+                  <a href="#"> <img src="images/angellist.png" alt="angellist" /> </a>
                 </li>
               </ul>
             </div>
@@ -97,7 +108,7 @@
 
       <div class="project-card flex column">
         <img
-          src="images/Snapshoot Portfolio (1).svg"
+          class="order-2"  src="images/Snapshoot Portfolio (1).svg"
           alt="project card image"
         />
         <div class="project-card-iterms flex column">
@@ -165,7 +176,7 @@
 
       <div class="project-card flex column">
         <img
-          src="images/Snapshoot Portfolio (3).svg"
+        class="order-2" src="images/Snapshoot Portfolio (3).svg"
           alt="project card image"
         />
         <div class="project-card-iterms flex column">
@@ -279,6 +290,60 @@
               <hr />
             </div>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------Contact me section------------------------------>
+    <section class="contact-section">
+      <div class="contact-hold">
+        <div class="contact-now">
+          <h2>Contact me</h2>
+          <p>
+            If you have an application you are interested in developing, a
+            features that you need built or a project that need coding. I'd love
+            to help with it.
+          </p>
+        </div>
+        <div class="contact-now-form">
+          <form action="https://formspree.io/f/mnqrekzw" method="POST">
+            <div class="input-username">
+              <input
+                type="text"
+                name="username"
+                class="input"
+                placeholder="Username"
+                maxlength="30"
+                required
+              />
+            </div>
+            <br />
+            <div class="email-input">
+              <input
+                type="email"
+                name="email"
+                class="input"
+                placeholder="Email"
+                size="64"
+                maxlength="64"
+                required
+              />
+            </div>
+            <br />
+
+            <div class="text-area">
+              <textarea
+                name="message"
+                type="text"
+                class="input-textarea"
+                cols="30"
+                maxlength="500"
+                placeholder="Enter your message here"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" value="Get In Touch" class="submit-button">Get In Touch</button>
+          </form>
         </div>
       </div>
     </section>

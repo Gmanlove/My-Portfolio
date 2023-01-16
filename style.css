@@ -358,3 +358,184 @@ ul.list-items.skill-items {
 .card-tag {
   color: #6070ff;
 }
+
+/*------------------------Contact Section-----------------------------*/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/contact-bg.png);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: inherit;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.contact-now h2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact-now p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin: 15px;
+  padding: 10;
+}
+
+.contact-now-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  padding: 15px 38px 15px 16px;
+}
+
+.input-textarea {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  padding: 15px 38px 15px 16px;
+}
+.submit-button {
+  width: 140px;
+  height: 48px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+button:hover {
+  border: none;
+  color: #fff;
+  background: #29323c;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+} 
+
+ button:active {
+  border: none;
+  color: #fff;
+  background: #2230d2;
+} 
+
+.desktop-menu{
+  display: none;
+}
+/*----------------Desktop version--------------*/
+
+
+
+@media screen and (min-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: inline;
+
+  }
+  .desktop-menu li, a {
+    padding-right: 15px;
+    height: 0%;
+    color: #344563;
+
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/header-bg.png");
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    padding: 50px 50px;
+  }
+
+.main-container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  
+}
+.main-container h1 {
+  width: 55%;
+}
+
+.main-container p {
+  width: 90%;
+}
+
+.nav-bar {
+  padding: 10px 40px;
+
+}
+
+.work-cards {
+padding-right: 60px;
+padding-left: 60px;
+gap: 0;
+
+}
+
+.project-card{
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+  .project-card img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .project-card-iterms{
+    padding: 20px;
+
+  }
+  
+  .order-2{
+    order: 2;
+  }
+
+  
+}

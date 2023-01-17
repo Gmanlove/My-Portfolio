@@ -9,7 +9,7 @@
 body {
   max-width: 100%;
   min-height: 100vh;
-  background-color: #e5e5e5;
+  background-color: #fff;
   font-family: Poppins, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -63,12 +63,18 @@ section {
 }
 
 .image {
+  display: flex;
+  flex-direction: column;
   border-bottom-left-radius: 80px;
   background-image: url("images/hero_bg.png");
   background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: 100%;
+  justify-content: center;
   padding: 5rem 1.25rem 15rem;
   background-color: #fff;
   background-position-x: 100%;
+  width: auto 100%;
 }
 
 .intro-text {
@@ -97,6 +103,7 @@ section {
   align-items: center;
   color: #172b4d;
   font-style: normal;
+  width: 65%;
 }
 
 .intro-items {
@@ -462,10 +469,44 @@ button:active {
   display: none;
 }
 
+.uber-desk {
+  display: none;
+}
+
+.desk-image {
+  display: none;
+}
+
+.mobile-image {
+  display: block;
+}
+
 /* ----------------Desktop version-------------- */
 
 @media screen and (min-width: 768px) {
   .nav-links {
+    display: none;
+  }
+
+  .desk-image {
+    display: block;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .uber-desk {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .card-title {
     display: none;
   }
 
@@ -478,23 +519,29 @@ button:active {
     padding-right: 15px;
     height: 0%;
     color: #344563;
+    text-decoration: none;
   }
 
   .image {
     display: flex;
     flex-direction: column;
     background-image: url("images/header-bg.png");
-    height: auto;
+    border-bottom-left-radius: 80px;
+    height: 90%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     justify-content: center;
-    padding: 50px 50px;
+    padding: 100px 100px;
+    margin-left: 40px;
+    margin-right: 20px;
   }
 
   .main-container {
     width: 90%;
-    margin: 20px auto;
-    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main-container h1 {
@@ -509,6 +556,10 @@ button:active {
     padding: 10px 40px;
   }
 
+  .main-card {
+    border-bottom-left-radius: 100px;
+  }
+
   .work-cards {
     padding-right: 60px;
     padding-left: 60px;
@@ -519,6 +570,7 @@ button:active {
     display: grid;
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
+    margin: 25px auto;
   }
 
   .project-card img {
@@ -532,5 +584,108 @@ button:active {
 
   .order-2 {
     order: 2;
+  }
+
+  .about-me {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .knowdge {
+    display: block;
+  }
+
+  .know-text {
+    display: flex;
+  }
+
+  .know-sec {
+    flex-direction: row;
+    padding: 5px 15px;
+  }
+
+  .know-list {
+    padding: 20px;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+  }
+
+  .about {
+    padding-left: 30px;
+    padding-right: 60px;
+  }
+
+  .know-list img {
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  section.contact-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .contact-now {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(./images/Destop-bg.png);
+    background-color: #6070ff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: inherit;
+    border-top-left-radius: 80px;
+  }
+
+  .contact-now h2,
+  .contact-now p {
+    grid-column: 2/4;
+    padding: 0 20px;
+  }
+
+  .contact-now-form .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    width: 447px;
+    border-radius: 0;
+    margin: auto;
+  }
+
+  .intro-items img {
+    margin-top: 15px;
+  }
+
+  .intro-items a {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-decoration: none;
+  }
+
+  .submit-button {
+    position: relative;
+    left: 30%;
   }
 }

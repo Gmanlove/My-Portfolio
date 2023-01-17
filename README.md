@@ -1,11 +1,6 @@
 
 My Portfolio project
 
-This is an Html and Css My Portfolio project
-
-## Built With
-- Major languages HTML, CSS
-
 
 # 📗 Table of Contents
 
@@ -28,6 +23,18 @@ This is an Html and Css My Portfolio project
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
+
+
+# About the Project
+This is an Html and Css My Portfolio project
+
+
+## Tech Stack HTML5, CSS3
+HTML5 and css3 which the latest versions were used in this project.
+
+## Built With
+- Major languages HTML, CSS
+
 
 # 📖 [My portfolio] <a name="about-project"></a>
 
@@ -64,8 +71,7 @@ git@github.com:Gmanlove/My-Portfolio.git
 
 - GitHub: [Gmanlove](https://github.com/Gmanlove)
 
-- *[future_feature_1]* In the future I will add desktop version design.
-- *[future_feature_5]* Refactoring the work section dynamically with Javascript.
+- *[future_feature]* Refactoring the work section dynamically with Javascript.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 

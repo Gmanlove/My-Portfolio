@@ -55,6 +55,10 @@ header {
   text-decoration: none;
 }
 
+.nav-logo:hover {
+  transform: rotate(90deg);
+}
+
 section {
   background-repeat: no-repeat;
   padding: 5rem 1.25rem 15rem;
@@ -140,6 +144,8 @@ section {
   display: flex;
   gap: 23px;
 }
+
+/* --------------------animation------------ */
 
 .list-items img {
   height: 20px;
@@ -261,7 +267,7 @@ button {
   border-radius: 8px;
   background-color: transparent;
   width: fit-content;
-  transition: all 0.3s ease-in-out;
+  transition: all cubic-bezier(0.08, 0.82, 0.48, 1.27) 3s;
 }
 
 .flex {
@@ -576,6 +582,22 @@ button:active {
   .project-card img {
     width: 100%;
     height: 100%;
+    transition: transform cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
+  }
+
+  .know-list img {
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  .intro-items img {
+    margin-top: 15px;
+  }
+
+  .project-card img:hover {
+    transform: scale(1.1, 1.1);
   }
 
   .project-card-iterms {
@@ -617,13 +639,6 @@ button:active {
   .about {
     padding-left: 30px;
     padding-right: 60px;
-  }
-
-  .know-list img {
-    border-radius: 8px;
-    width: 40px;
-    height: 40px;
-    position: relative;
   }
 
   section.contact-section {
@@ -668,10 +683,6 @@ button:active {
     width: 447px;
     border-radius: 0;
     margin: auto;
-  }
-
-  .intro-items img {
-    margin-top: 15px;
   }
 
   .intro-items a {

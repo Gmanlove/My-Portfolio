@@ -55,9 +55,8 @@ header {
   text-decoration: none;
 }
 
-.nav-logo:hover{
+.nav-logo:hover {
   transform: rotate(90deg);
-
 }
 
 section {
@@ -146,13 +145,12 @@ section {
   gap: 23px;
 }
 
-/* --------------------animation------------*/
+/* --------------------animation------------ */
 
 .list-items img {
   height: 20px;
   width: 20px;
 }
-
 
 .list-items li {
   list-style: none;
@@ -587,10 +585,20 @@ button:active {
     transition: transform cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
   }
 
+  .know-list img {
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  .intro-items img {
+    margin-top: 15px;
+  }
+
   .project-card img:hover {
     transform: scale(1.1, 1.1);
   }
-
 
   .project-card-iterms {
     padding: 20px;
@@ -631,13 +639,6 @@ button:active {
   .about {
     padding-left: 30px;
     padding-right: 60px;
-  }
-
-  .know-list img {
-    border-radius: 8px;
-    width: 40px;
-    height: 40px;
-    position: relative;
   }
 
   section.contact-section {
@@ -682,10 +683,6 @@ button:active {
     width: 447px;
     border-radius: 0;
     margin: auto;
-  }
-
-  .intro-items img {
-    margin-top: 15px;
   }
 
   .intro-items a {

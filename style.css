@@ -150,6 +150,12 @@ section {
 .list-items img {
   height: 20px;
   width: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-items img:hover {
+  border: 1px solid #7f8cff;
+  border-radius: 10%;
 }
 
 .list-items li {

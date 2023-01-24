@@ -51,7 +51,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: #142cff;
   text-decoration: none;
 }
 
@@ -123,7 +123,7 @@ section {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1a30ff;
   text-decoration: none;
 }
 
@@ -191,6 +191,7 @@ section {
   width: 100%;
   gap: 12px;
   align-items: center;
+  color: #424242;
 }
 
 .card-lists .canopy {
@@ -199,7 +200,7 @@ section {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   line-height: 16px;
-  color: #344563;
+  color: #424242;
   font-size: 13px;
 }
 
@@ -214,7 +215,7 @@ section {
 
 .card-lists p {
   font-size: 13px;
-  color: #7a869a;
+  color: #424242;
   padding: 8px 0;
   font-weight: 600;
   line-height: 16px;
@@ -254,7 +255,7 @@ ul {
   border-radius: 8px;
   background-color: #ebebff;
   font-size: 12px;
-  color: #6070ff;
+  color: #0017eb;
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -268,7 +269,7 @@ button {
   line-height: 24px;
   margin-top: 24px;
   padding: 12px;
-  color: #396df2;
+  color: #474747;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: transparent;
@@ -678,6 +679,11 @@ button:active {
     padding: 0 20px;
   }
 
+  .contact-now p {
+    color: #000;
+    background-color: #c9c9c9;
+  }
+
   .contact-now-form .form {
     display: flex;
     flex-direction: column;
@@ -697,7 +703,7 @@ button:active {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #1a30ff;
     text-decoration: none;
   }
 

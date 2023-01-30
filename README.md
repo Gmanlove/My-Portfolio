@@ -26,14 +26,14 @@ My Portfolio project
 
 
 # About the Project
-This is an Html and Css My Portfolio project
+This is an Html,Css and Javascript My Portfolio project
 
 
 ## Tech Stack HTML5, CSS3
-HTML5 and css3 which the latest versions were used in this project.
+HTML5,css3 and Javascript were used in this project.
 
 ## Built With
-- Major languages HTML, CSS
+- Major languages HTML, CSS and JAVASCRIPT
 
 
 # 📖 [My portfolio] <a name="about-project"></a>
@@ -45,6 +45,7 @@ I did this project by creating repository where I created my portfolio website
 ## 🛠 Built With <a name="built-with"></a>
 - HTML 
 - CSS
+- JAVASCRIPT
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -79,7 +80,7 @@ git@github.com:Gmanlove/My-Portfolio.git
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Stephen Okhaishie
+I would like to thank God for His Grace
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

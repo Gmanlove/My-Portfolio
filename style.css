@@ -420,7 +420,6 @@ section {
   background: #e5e5e5;
   display: grid;
   gap: 24px;
-  
 }
 
 .project-card {
@@ -1169,5 +1168,4 @@ button:active {
   .desktop-menu.active {
     display: none;
   }
-
 }

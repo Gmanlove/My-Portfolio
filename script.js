@@ -15,7 +15,7 @@ closeIcon.addEventListener('click', () => {
   closeIcon.classList.toggle('show');
 });
 
-navListEl.forEach((element) =>{
+navListEl.forEach((element) => {
   element.addEventListener('click', () => {
     deskEl.classList.toggle('active');
     humbergerIcon.classList.toggle('hide');

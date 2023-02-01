@@ -91,170 +91,10 @@
       </section>
     </main>
 
-    <!-----project cards-->
 
     <section class="work-cards" id="cards">
-      <div class="project-card flex column">
-        <img
-          class="mobile-image"
-          src="images/Snapshoot Portfolio.svg"
-          alt="project card image"
-        />
-        <img
-          class="desk-image"
-          src="images/Snapshoot Portfolio1.png"
-          alt="project card image"
-        />
-        <div class="project-card-iterms flex column">
-          <h2 class="card-title">Tonic</h2>
-          <h2 class="uber-desk">Tonic</h2>
-          <div class="card-lists">
-            <p class="canopy">Canopy</p>
-            <div class="round"></div>
-            <p>Back End Dev</p>
-            <div class="round"></div>
-            <p>2015</p>
-          </div>
-          <div class="card-note">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <div class="card-tag">
-            <ul class="card-skills">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-          </div>
-          <button type="button">See Project</button>
-        </div>
-      </div>
-      <!-----card 2--->
-
-      <div class="project-card flex column">
-        <img
-          class="mobile-image"
-          src="images/Snapshoot Portfolio (1).svg"
-          alt="project card image"
-        />
-        <img
-          class="desk-image order-2"
-          src="images/Snapshoot Portfolio2.png"
-          alt="project card image"
-        />
-        <div class="project-card-iterms flex column">
-          <h2 class="card-title">
-            Multi-Post<br />
-            Stories
-          </h2>
-          <h2 class="uber-desk">Multi-Post Stories</h2>
-          <div class="card-lists">
-            <p class="canopy">Canopy</p>
-            <div class="round"></div>
-            <p>Backend Dev</p>
-            <div class="round"></div>
-            <p>2015</p>
-          </div>
-          <div class="card-note">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <div class="card-tag">
-            <ul class="card-skills">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-          </div>
-          <button type="button">See Project</button>
-        </div>
-      </div>
-      <!-----cards 3---------------->
-
-      <div class="project-card flex column">
-        <img
-          class="mobile-image"
-          src="images/Snapshoot Portfolio (2).svg"
-          alt="project card image"
-        />
-        <img
-          class="desk-image"
-          src="images/Snapshoot Portfolio3.png"
-          alt="project card image"
-        />
-        <div class="project-card-iterms flex column">
-          <h2 class="card-title">Tonic</h2>
-          <h2 class="uber-desk">Facebook 360</h2>
-          <div class="card-lists">
-            <p class="canopy">Canopy</p>
-            <div class="round"></div>
-            <p>Backend Dev</p>
-            <div class="round"></div>
-            <p>2015</p>
-          </div>
-          <div class="card-note">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <div class="card-tag">
-            <ul class="card-skills">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-          </div>
-          <button type="button">See Project</button>
-        </div>
-      </div>
-
-      <!-----cards 4--------->
-
-      <div class="project-card flex column">
-        <img
-          class="mobile-image"
-          src="images/Snapshoot Portfolio (3).svg"
-          alt="project card image"
-        />
-        <img
-          class="desk-image order-2"
-          src="images/Snapshoot Portfolio4.png"
-          alt="project card image"
-        />
-
-        <div class="project-card-iterms flex column">
-          <h2 class="card-title">Multi-Post <br />Stories</h2>
-          <h2 class="uber-desk">Uber Navigation</h2>
-          <div class="card-lists">
-            <p class="canopy">Canopy</p>
-            <div class="round"></div>
-            <p>Backend Dev</p>
-            <div class="round"></div>
-            <p>2015</p>
-          </div>
-          <div class="card-note">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <div class="card-tag">
-            <ul class="card-skills">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-          </div>
-          <button type="button">See Project</button>
-        </div>
-      </div>
+      <div class="project-card" id="workpage"></div>
     </section>
-
     <!----------About Section------------->
     <section class="about" id="about">
       <div class="about-me flex column">
@@ -409,6 +249,90 @@
         </div>
       </div>
     </section>
+
+    <div class="modal" id="modal1">
+      <div id="popup-modal" class="pop-content">
+        <div class="headline-popup">
+          <h1>Tonic</h1>
+          <a href="#" role="button" onclick="closePopup()">
+            <div class="popup-clsbtn">x</div>
+          </a>
+        </div>
+      </div>
+      <ul class="small-tags">
+        <li class="canopy-sm-tag">CANOPY</li>
+        <li>
+          <div class="round-popup"></div>
+        </li>
+        <li class="second-sm-tag">Back End Dev</li>
+        <li>
+          <div class="round-popup"></div>
+        </li>
+        <li class="second-sm-tag">2015</li>
+      </ul>
+      <div class="popup-image-container">
+        <img src="./images/Snapshoot Portfolio.png" alt="pop-image" />
+      </div>
+      <div class="popup-mobile-container"></div>
+      <div class="buttom-content-container">
+        <div class="paragraph-description">
+          <p class="paragraph-description-desktop">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it 1960s with the releaLorem Ipsum is simply dummy text of
+            the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it 1960s with the
+            releorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="action-content">
+          <div class="popup-tags">
+            <ul class="first">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>javascript</li>
+            </ul>
+            <ul class="second">
+              <li>github</li>
+              <li>ruby</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="divider-popup">
+            <img src="./images/Vector 4.png" alt="Divider popup" />
+          </div>
+          <div class="popup-button-action">
+            <button type="submit">
+              <div class="source-code">
+                <a href="">See live </a>
+              </div>
+              <div class="deploy-icon">
+                <img
+                  src="./images/deploy.svg"
+                  alt="deployment icon"
+                  class="deploy-icon-popup"
+                />
+              </div>
+            </button>
+            <button type="" class="submit-github">
+              <div class="live-version">
+                <a href="">See Source </a>
+              </div>
+              <div class="github-img">
+                <img
+                  src="./images/github-popup.svg"
+                  alt="github icon"
+                  class="github-icon-popup"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

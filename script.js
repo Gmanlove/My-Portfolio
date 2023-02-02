@@ -29,8 +29,9 @@ const projects = [
     des: ['Canopy', 'backend', '2015'],
     img: './images/Snapshoot Portfolio.svg',
     description:
-    'Personal portfolio that contains project information, skills, and contact',
-    desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'Personal portfolio that contains project information, skills, and contact',
+    desc1:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     technologies1: ['github', 'ruby', 'Bootstrap'],
     liveVersion: 'https://gmanlove.github.io/My-Portfolio/ ',
@@ -40,8 +41,10 @@ const projects = [
     name: 'Multi-Post Stories',
     des: ['Canopy', 'backend', '2015'],
     img: './images/Snapshoot Portfolio (1).svg',
-    description: 'Personal portfolio that contains project information, skills, and contact',
-    desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    description:
+      'Personal portfolio that contains project information, skills, and contact',
+    desc1:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     technologies1: ['github', 'ruby', 'Bootstap'],
     liveVersion: 'https://gmanlove.github.io/My-Portfolio/ ',
@@ -52,8 +55,9 @@ const projects = [
     des: ['Canopy', 'backend', '2015'],
     img: './images/Snapshoot Portfolio (2).svg',
     description:
-    'Personal portfolio that contains project information, skills, and contact',
-    desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'Personal portfolio that contains project information, skills, and contact',
+    desc1:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     technologies1: ['github', 'ruby', 'Bootstrap'],
     liveVersion: 'https://gmanlove.github.io/My-Portfolio/ ',
@@ -64,8 +68,9 @@ const projects = [
     des: ['Canopy', 'backend', '2015'],
     img: './images/Snapshoot Portfolio (3).svg',
     description:
-    'Personal portfolio that contains project information, skills, and contact',
-    desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'Personal portfolio that contains project information, skills, and contact',
+    desc1:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     technologies1: ['github', 'ruby', 'Bootsrap'],
     liveVersion: 'https://gmanlove.github.io/My-Portfolio/ ',
@@ -76,6 +81,7 @@ const projects = [
 const workpage = document.querySelector('#workpage');
 for (let i = 0; i < projects.length; i += 1) {
   workpage.innerHTML += `
+  <div class="card-proj">
   <img src="${projects[i].img}" alt="project card image" />
   <div class="project-card-iterms flex column">
     <h2 class="card-title">${projects[i].name}</h2>
@@ -99,6 +105,7 @@ for (let i = 0; i < projects.length; i += 1) {
       </ul>
     </div>
     <button type="button" id="btn-${i}">See Project</button>
+  </div>
   </div>
   `;
 }

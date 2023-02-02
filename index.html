@@ -363,7 +363,11 @@
           </p>
         </div>
         <div class="contact-now-form">
-          <form action="https://formspree.io/f/mnqrekzw" method="POST">
+          <form
+            action="https://formspree.io/f/mnqrekzw"
+            method="post"
+            onsubmit="return validateEmail()"
+          >
             <div class="input-username">
               <label hidden id="mylabel" for="username">Username</label>
               <input
@@ -382,7 +386,8 @@
                 type="email"
                 name="email"
                 class="input"
-                placeholder="Email"
+                placeholder="enter email"
+                id="email"
                 size="64"
                 maxlength="64"
                 required
@@ -402,6 +407,7 @@
                 required
               ></textarea>
             </div>
+            <div id="errorMessage" class="error-message"></div>
             <button type="submit" value="Get In Touch" class="submit-button">
               Get In Touch
             </button>

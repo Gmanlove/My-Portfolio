@@ -22,3 +22,22 @@ navListEl.forEach((element) => {
     closeIcon.classList.toggle('show');
   });
 });
+
+// ---------------------------Contact form validation---------------------
+const formContact = document.getElementById('form');
+
+function validateEmail() {
+  const email = document.getElementById('email').value;
+  const error = document.getElementById('errorMessage');
+  if (email.toLowerCase() !== email) {
+    error.innerHTML = 'Please enter your email in lowercase';
+    error.style.display = 'block';
+    error.style.color = '#FFFF';
+    error.style.fontSize = 'larger';
+    return false;
+  }
+  document.getElementById('errorMessage').innerHTML = '';
+  return true;
+}
+
+formContact.addEventListener('submit', validateEmail);

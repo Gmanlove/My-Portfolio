@@ -1069,11 +1069,9 @@ button:active {
   }
 
   .card-proj {
-    margin: 50px 0;
-    display: flex;
-    flex-direction: row;
-    background-color: #fff;
-    padding: 20px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .card-proj:nth-child(even) {

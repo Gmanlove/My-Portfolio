@@ -25,8 +25,7 @@ My Portfolio project
 - [📝 License](#license)
 
 
-# About the Project
-This is an Html,Css and Javascript My Portfolio project
+
 
 
 ## Tech Stack HTML5, CSS3

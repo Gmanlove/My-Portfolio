@@ -347,7 +347,7 @@ ul {
 
 section {
   background-repeat: no-repeat;
-  padding: 5rem 1.25rem 15rem;
+  padding: 5rem 1.25rem 7rem;
   background-color: #fff;
   background-position-x: 100%;
 }
@@ -436,7 +436,7 @@ section {
   border-radius: 16px;
   padding: 16px;
   background-color: #fff;
-  margin: 20px 0;
+  margin: 100px 0;
 }
 
 .project-card:nth-of-type(2),
@@ -759,11 +759,12 @@ button:active {
     background: #fff;
     border: 1px solid #ebecf0;
     width: 75%;
-    margin: 5% auto  4% auto;
+    margin: 3% auto  3% auto;
     padding: 5px 20px;
     justify-content: center;
-    top: 60px;
-    height: auto;
+    /* top: 60px; */
+    height: 100%;
+    overflow: auto;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
   }
@@ -838,15 +839,9 @@ button:active {
     color: #7a869a;
   }
 
-  .popup-image-container {
-    width: 100%;
-    height: 100%;
-    margin: 10px auto;
-  }
 
   .popup-image-container img {
-    border-radius: 16px;
-    align-items: center;
+    object-fit: cover;
     width: 100%;
   }
 
@@ -860,7 +855,7 @@ button:active {
   }
 
   .paragraph-description-desktop {
-    width: 80%;
+    width: 100%;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: lighter;
@@ -1042,6 +1037,10 @@ button:active {
     padding-left: 60px;
     gap: 0;
   }
+  .card-proj {
+    row-gap: 120px;
+    
+  }
 
   .project-card img {
     width: 100%;
@@ -1065,7 +1064,7 @@ button:active {
   }
 
   .project-card-iterms {
-    padding: 20px;
+    padding: 30px;
   }
 
   .card-proj {
@@ -1074,8 +1073,8 @@ button:active {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .card-proj:nth-child(even) {
-    flex-direction: row-reverse;
+  .card-proj:nth-child(even) .project-card-iterms:last-child {
+    order: -1;
   }
 
   .order-2 {
@@ -1090,6 +1089,13 @@ button:active {
 
   .knowdge {
     display: block;
+  }
+  .column {
+    flex-direction: column;
+  }
+
+  .flex {
+    display: flex;
   }
 
   .know-text {

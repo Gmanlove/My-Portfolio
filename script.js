@@ -172,7 +172,6 @@ for (let j = 0; j < projects.length; j += 1) {
               <div class="github-img">
                 <img src="./images/github-popup.svg" alt="github icon" class="github-icon-popup" />
               </div>
-
             </button>
           </div>
         </div>

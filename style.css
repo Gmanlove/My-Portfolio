@@ -762,6 +762,7 @@ button:active {
     margin: 3% auto  3% auto;
     padding: 5px 20px;
     justify-content: center;
+
     /* top: 60px; */
     height: 100%;
     overflow: auto;
@@ -838,7 +839,6 @@ button:active {
   .second-sm-tag {
     color: #7a869a;
   }
-
 
   .popup-image-container img {
     object-fit: cover;
@@ -1037,10 +1037,6 @@ button:active {
     padding-left: 60px;
     gap: 0;
   }
-  .card-proj {
-    row-gap: 120px;
-    
-  }
 
   .project-card img {
     width: 100%;
@@ -1090,6 +1086,7 @@ button:active {
   .knowdge {
     display: block;
   }
+
   .column {
     flex-direction: column;
   }

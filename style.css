@@ -16,6 +16,10 @@ body {
   color: #344563;
 }
 
+.error-message {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .modal {
     display: none;
@@ -696,7 +700,7 @@ ul.list-items.skill-items {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #b3bac5;
+  color: #172b4d;
   padding: 15px 38px 15px 16px;
 }
 

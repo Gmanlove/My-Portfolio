@@ -195,7 +195,6 @@ for (let j = 0; j < projects.length; j += 1) {
   });
 }
 
-
 // ---------------------------Contact form validation---------------------
 const formContact = document.getElementById('form');
 

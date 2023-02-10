@@ -1095,10 +1095,6 @@ button:active {
     flex-direction: column;
   }
 
-  .flex {
-    display: flex;
-  }
-
   .know-text {
     display: flex;
   }

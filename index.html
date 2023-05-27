@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="nav-logo">
-        <a href="#">My Logo </a>
+        <a href="./index.html"><img src="images/20230407_190846.png" alt="My logo"> </a>
       </div>
 
       <!---------- Desktop menu-------------->
@@ -49,9 +49,9 @@
           <div class="intro-text">
             <h1>I'm Emmanuel <br />Glad to see you!</h1>
             <p>
-              I am a Software developer, i can help you build a product, feature
+              I am a Software developer, I can help you build a product, feature
               or website, look through some of my works and experience! if you
-              like what you see and have a project you need coded dont hesitate
+              like what you see and have a project you need coded don't hesitate
               to contact me.
             </p>
           </div>
@@ -60,27 +60,27 @@
             <div class="intro-connect">
               <ul class="list-items">
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/brightgman2" target="_blank" rel="noopener">
                     <img src="images/twitter.png" alt=" My Social Media" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/emmanuelgozieobi/" target="_blank" rel="noopener">
                     <img src="images/Linkedin icon.svg" alt="My Social Media" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://medium.com/@emmagmanc" target="_blank" rel="noopener">
                     <img src="images/medium.png" alt="My Social Media" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/Gmanlove" target="_blank" rel="noopener">
                     <img src="images/github.png" alt="My Social Media" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://wellfound.com/u/emmanuel-obi-9" target="_blank" rel="noopener">
                     <img src="images/angellist.png" alt="My Social Media" />
                   </a>
                 </li>
@@ -112,34 +112,37 @@
             <div class="intro-connect">
               <ul class="list-items skill-items">
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/Gmanlove" target="_blank" rel="noopener">
                     <img src="images/github.png" alt=" My Social Media" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/emmanuelgozieobi/" target="_blank" rel="noopener">
                     <img src="images/Linkedin icon.svg" alt="My Social Media" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://wellfound.com/u/emmanuel-obi-9" target="_blank" rel="noopener">
                     <img src="images/angellist.png" alt="My Social Media" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a  href="https://twitter.com/brightgman2" target="_blank" rel="noopener">
                     <img src="images/twitter.png" alt="My Social Media" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://medium.com/@emmagmanc" target="_blank" rel="noopener">
                     <img src="images/medium.png" alt="My Social Media" />
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <button type="button">Get my resume</button>
+          <a href="images/Resume .pdf" target="_blank">
+            <button type="button">Get my resume</button>
+          </a>
+          
         </div>
         <div class="knowdge flex column">
           <ul>
@@ -155,12 +158,12 @@
                     <p class="job-text">JavaScript</p>
                   </li>
                   <li class="know-list flex">
-                    <img src="images/html.png" alt="html logo" />
-                    <p class="job-text">HTML</p>
+                    <img src="images/design+development+facebook+framework+mobile+react+icon-1320165723839064798.png" alt="html logo" class="few" />
+                    <p class="job-text">REACT</p>
                   </li>
                   <li class="know-list flex">
-                    <img src="images/css.png" alt="css logo" />
-                    <p class="job-text">CSS</p>
+                    <img src="images/ruby.png" alt="css logo" class="few" />
+                    <p class="job-text">RUBY</p>
                   </li>
                 </ul>
               </div>
@@ -169,8 +172,16 @@
               <div class="know">
                 <p class="know-text flex">
                   <span class="text">Frameworks</span
-                  ><span class="arrow">></span>
+                  ><span class="arrow" id="arrow" >></span>
                 </p>
+                <ul class="framework-list" id="frameworkList">
+                  <li>Bootstrap</li>
+                  <li>Ruby on Rails</li>
+                  <li>React</li>
+                  <li>Vue.js</li>
+
+                  <!-- Add more frameworks as needed -->
+                </ul>
               </div>
             </li>
             <div class="arrow-line">
@@ -179,8 +190,15 @@
             <li>
               <div class="know">
                 <p class="know-text flex">
-                  <span class="text">Skills</span><span class="arrow">></span>
+                  <span class="text">Skills</span>
+                  <span class="arrow" id="arrow2">></span>
                 </p>
+                <ol class="framework-list" id="skillList">
+                  <li>Programming Languages:Html, Css, JavaScript, Ruby etc.</li>
+                  <li>Communication and Collaboration: Verbal and Written Communication, Teamwork, Problem-Solving, Time Management, Adaptability, Active Listening, etc.</li>
+                  <li>Web Development: HTML, CSS, JavaScript, React, Angular, Vue.js, Node.js, Django, Flask, Ruby on Rails, Laravel, etc.</li>
+                
+                </ol>
               </div>
             </li>
             <div class="arrow-line">
@@ -311,7 +329,7 @@
             <img src="./images/Vector 4.png" alt="Divider popup" />
           </div>
           <div class="popup-button-action">
-            <button type="submit">
+            <button type="submit" id="seeLiveBtn">
               <div class="source-code">
                 <a href="">See live </a>
               </div>
@@ -323,7 +341,7 @@
                 />
               </div>
             </button>
-            <button type="submit" class="submit-github">
+            <button type="submit" class="submit-github" id="seeSourceBtn">
               <div class="live-version">
                 <a href="">See Source </a>
               </div>

@@ -47,6 +47,25 @@ body {
     border-radius: 16px;
   }
 
+  .popup-image-container img {
+    width: 100%;
+  }
+
+  .framework-list {
+    display: none;
+    color: #5d39dd;
+    background-color: bisque;
+  }
+
+  .arrow {
+    border: 2px solid red;
+  }
+
+  .few {
+    width: 50px;
+    height: 50px;
+  }
+
   .round-popup {
     width: 8px;
     height: 8px;
@@ -78,6 +97,10 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  .card-proj img {
+    width: 100%;
   }
 
   .small-tags {
@@ -148,9 +171,9 @@ body {
   }
 
   .paragraph-description-desktop {
-    width: 90%;
+    width: 100%;
     text-align: start;
-    padding: 10px 0;
+    padding: 5px 0;
     margin-left: -6px;
   }
 
@@ -233,8 +256,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
-  background-color: #fff;
+  padding: 1px;
+  position: fixed;
+  background-image: -webkit-linear-gradient(65deg, #d63bb7 40%, #46dd39 60%);
 }
 
 .nav-logo a {
@@ -249,8 +273,10 @@ header {
   text-decoration: none;
 }
 
-.nav-logo:hover {
-  transform: rotate(90deg);
+.nav-logo img {
+  width: 50px;
+  border-radius: 20px;
+  margin-left: 25px;
 }
 
 .desktop-menu.active {
@@ -314,8 +340,8 @@ ul {
 }
 
 .desktop-menu.active li {
-  padding-left: 28px;
-  padding-bottom: 40px;
+  padding-left: 150px;
+  padding-bottom: 80px;
 }
 
 .intro-items a {
@@ -762,16 +788,19 @@ button:active {
   .popup-container {
     background: #fff;
     border: 1px solid #ebecf0;
-    width: 75%;
+    width: 70%;
     margin: 3% auto  3% auto;
     padding: 5px 20px;
     justify-content: center;
-
-    /* top: 60px; */
     height: 100%;
     overflow: auto;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .round-popup {
@@ -846,7 +875,10 @@ button:active {
 
   .popup-image-container img {
     object-fit: cover;
-    width: 100%;
+    width: 55rem;
+    height: 20rem;
+    max-height: 100%;
+    max-width: 100%;
   }
 
   .buttom-content-container {
@@ -856,6 +888,12 @@ button:active {
     margin-left: 24px;
     display: flex;
     flex-direction: row;
+  }
+
+  .framework-list {
+    display: none;
+    color: #5d39dd;
+    background-color: bisque;
   }
 
   .paragraph-description-desktop {
@@ -1111,6 +1149,10 @@ button:active {
     height: 120px;
     background: #f7f7f9;
     border-radius: 8px;
+  }
+
+  .arrow {
+    border: 2px solid red;
   }
 
   .about {

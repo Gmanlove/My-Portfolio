@@ -25,56 +25,56 @@ navListEl.forEach((element) => {
 
 const projects = [
   {
-    name: 'METRICS WEBAPP',
-    des: ['Canopy', 'Frontend', '2023'],
-    img: './images/firstcard.png',
+    name: 'Tonic',
+    des: ['Canopy', 'backend', '2015'],
+    img: './images/Snapshoot Portfolio.svg',
     description:
-      'This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that was created making use of React and Redux.',
+      'Personal portfolio that contains project information, skills, and contact',
     desc1:
-      'This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that was created making use of React and Redux.',
-    technologies: ['HTML', 'CSS', 'React and Redux'],
-    technologies1: ['Javascript', 'ruby', 'Bootstrap'],
-    liveVersion: 'https://graceful-treacle-9ae10f.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove',
-  },
-  {
-    name: 'DREAMVIEW SUMMIT',
-    des: ['Canopy', 'Frontend', '2023'],
-    img: './images/second.png',
-    description:
-      'This project showcases my proficiency in a range of technologies, as well as my ability to create user-friendly interfaces and robust functionality. Build with HTML,CSS and Javascript',
-    desc1:
-      'My Capstone Project demonstrates my ability to design and build a functional web-based platform that addresses a real-world problem.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    technologies1: ['React-redux', 'ruby', 'Bootstap'],
-    liveVersion: 'https://fabulous-empanada-256871.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove',
+    technologies1: ['github', 'ruby', 'Bootstrap'],
+    liveVersion: 'https://gmanlove.github.io/My-Portfolio/ ',
+    sourceCode: 'https://github.com/Gmanlove/My-Portfolio',
   },
   {
-    name: 'SPACE TRAVELER HUB',
-    des: ['Canopy', 'backend', '2023'],
-    img: './images/third.png',
+    name: 'Multi-Post Stories',
+    des: ['Canopy', 'backend', '2015'],
+    img: './images/Snapshoot Portfolio (1).svg',
     description:
-    'The Space Travelers Hub is a service through which SpaceX astronauts can book rockets or schedule missions for a particular timeframe.',
+      'Personal portfolio that contains project information, skills, and contact',
     desc1:
-      'The Space Travelers Hub is a service through which SpaceX astronauts can book rockets or schedule missions for a particular timeframe.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    technologies1: ['React-redux', 'ruby', 'Bootstrap'],
-    liveVersion: 'https://inspiring-maamoul-159777.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove',
+    technologies1: ['github', 'ruby', 'Bootstap'],
+    liveVersion: 'https://gmanlove.github.io/My-Portfolio/ ',
+    sourceCode: 'https://github.com/Gmanlove/My-Portfolio',
   },
   {
-    name: 'POKEMON APP',
-    des: ['Canopy', 'backend', '2023'],
-    img: './images/fourth.png',
+    name: 'Facebook 360',
+    des: ['Canopy', 'backend', '2015'],
+    img: './images/Snapshoot Portfolio (2).svg',
     description:
-      'A pokemon website is designed for children and for adults who used to love pokemon games in their childhood. From the website, users could access the different creatures which inhabit the world of pokemon games',
+      'Personal portfolio that contains project information, skills, and contact',
     desc1:
-      'Users can give like for the creatures which they liked most and can also write their insights in the comments portion.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies1: ['github', 'ruby', 'Bootstrap'],
+    liveVersion: 'https://gmanlove.github.io/My-Portfolio/ ',
+    sourceCode: 'https://github.com/Gmanlove/My-Portfolio',
+  },
+  {
+    name: 'Uber Navigation',
+    des: ['Canopy', 'backend', '2015'],
+    img: './images/Snapshoot Portfolio (3).svg',
+    description:
+      'Personal portfolio that contains project information, skills, and contact',
+    desc1:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     technologies1: ['github', 'ruby', 'Bootsrap'],
-    liveVersion: 'https://resilient-smakager-5c90ff.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove',
+    liveVersion: 'https://gmanlove.github.io/My-Portfolio/ ',
+    sourceCode: 'https://github.com/Gmanlove/My-Portfolio',
   },
 ];
 
@@ -118,101 +118,82 @@ for (let j = 0; j < projects.length; j += 1) {
     bt.addEventListener('click', () => {
       modal.style.display = 'block';
       modal.innerHTML = `
-        <div class="popup-container block-popup">
-          <div id="popup-modal" class="pop-content">
-            <div class="headline-popup">
-              <h1>${projects[j].name}</h1>
-              <a href="#" role="button" onclick="closePopup()">
-                <div class="popup-clsbtn">x</div>
-              </a>
-            </div>
+      <div class="popup-container block-popup">
+      <div id="popup-modal" class="pop-content">
+        <div class="headline-popup">
+          <h1>${projects[j].name}</h1>
+          <a href="#" role="button" onclick="closePopup()">
+            <div class="popup-clsbtn">x</div>
+          </a>
+        </div>
+      </div>
+      <ul class="small-tags">
+        <li class="canopy-sm-tag">${projects[j].des[0]}</li>
+        <li>
+          <div class="round-popup"></div>
+        </li>
+        <li class="second-sm-tag">${projects[j].des[1]}</li>
+        <li>
+          <div class="round-popup"></div>
+        </li>
+        <li class="second-sm-tag">${projects[j].des[2]}</li>
+      </ul>
+      <div class="popup-image-container">
+        <img src="${projects[j].img}" alt="pop-image" />
+      </div>
+      <div class="buttom-content-container">
+        <div class="paragraph-description">
+          <p class="paragraph-description-desktop">
+            ${projects[j].desc1}
+          </p>
+        </div>
+        <div class="action-content">
+          <div class="popup-tags">
+            <ul class="first">
+            <li>${projects[j].technologies[0]}</li>
+            <li>${projects[j].technologies[1]}</li>
+            <li>${projects[j].technologies[2]}</li>
+            </ul>
+            <ul class="second">
+            <li>${projects[j].technologies1[0]}</li>
+            <li>${projects[j].technologies1[1]}</li>
+            <li>${projects[j].technologies1[2]}</li>
+            </ul>
           </div>
-          <ul class="small-tags">
-            <li class="canopy-sm-tag">${projects[j].des[0]}</li>
-            <li>
-              <div class="round-popup"></div>
-            </li>
-            <li class="second-sm-tag">${projects[j].des[1]}</li>
-            <li>
-              <div class="round-popup"></div>
-            </li>
-            <li class="second-sm-tag">${projects[j].des[2]}</li>
-          </ul>
-          <div class="popup-image-container">
-            <img src="${projects[j].img}" alt="pop-image" />
+          <div class="divider-popup">
+            <img src="./images/Vector 4.png" alt="Divider popup" />
           </div>
-          <div class="buttom-content-container">
-            <div class="paragraph-description">
-              <p class="paragraph-description-desktop">
-                ${projects[j].desc1}
-              </p>
-            </div>
-            <div class="action-content">
-              <div class="popup-tags">
-                <ul class="first">
-                  <li>${projects[j].technologies[0]}</li>
-                  <li>${projects[j].technologies[1]}</li>
-                  <li>${projects[j].technologies[2]}</li>
-                </ul>
-                <ul class="second">
-                  <li>${projects[j].technologies1[0]}</li>
-                  <li>${projects[j].technologies1[1]}</li>
-                  <li>${projects[j].technologies1[2]}</li>
-                </ul>
+          <div class="popup-button-action">
+            <button type="submit">
+              <div class="source-code">
+                <a href="">See live </a>
               </div>
-              <div class="divider-popup">
-                <img src="./images/Vector 4.png" alt="Divider popup" />
+              <div class="deploy-icon">
+                <img src="./images/deploy.svg" alt="deployment icon" class="deploy-icon-popup" />
               </div>
-              <div class="popup-button-action">
-                <button id="seeLiveBtn-${j}" type="button">
-                  <div class="source-code">
-                    <a href="${projects[j].liveVersion}" target="_blank">See Live</a>
-                  </div>
-                  <div class="deploy-icon">
-                    <img src="./images/deploy.svg" alt="deployment icon" class="deploy-icon-popup" />
-                  </div>
-                </button>
-                <button class="submit-github">
-                  <div class="live-version">
-                    <a href="${projects[j].sourceCode}" target="_blank">See Source</a>
-                  </div>
-                  <div class="github-img">
-                    <img src="./images/github-popup.svg" alt="github icon" class="github-icon-popup" />
-                  </div>
-                </button>
+            </button>
+            <button class="submit-github">
+              <div class="live-version">
+                <a href="">See Source </a>
               </div>
-            </div>
+              <div class="github-img">
+                <img src="./images/github-popup.svg" alt="github icon" class="github-icon-popup" />
+              </div>
+            </button>
           </div>
         </div>
+      </div>
+    </div>
       `;
-
-      const seeLiveBtn = document.getElementById(`seeLiveBtn-${j}`);
-      seeLiveBtn.addEventListener('click', (event) => {
-        event.stopPropagation();
-        window.open(projects[j].liveVersion, '_blank', 'noopener noreferrer');
-      });
 
       const closeBtn = document.querySelector('.popup-clsbtn');
       closeBtn.addEventListener('click', () => {
+        const modal = document.querySelector('.modal');
         modal.style.display = 'none';
       });
     });
   });
 }
-
-const arrow = document.getElementById('arrow');
-const frameworkList = document.getElementById('frameworkList');
-
-arrow.addEventListener('click', () => {
-  frameworkList.style.display = frameworkList.style.display === 'none' ? 'block' : 'none';
-});
-
-const arrow2 = document.getElementById('arrow2');
-const skillList = document.getElementById('skillList');
-
-arrow2.addEventListener('click', () => {
-  skillList.style.display = skillList.style.display === 'none' ? 'block' : 'none';
-});
 
 // ---------------------------Contact form validation---------------------
 const formContact = document.getElementById('form');

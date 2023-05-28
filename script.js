@@ -25,7 +25,7 @@ navListEl.forEach((element) => {
 
 const projects = [
   {
-    name: 'METRICS WEBAPP',
+    name: 'METRICS WEB',
     des: ['Canopy', 'Frontend', '2023'],
     img: './images/firstcard.png',
     description:
@@ -38,7 +38,7 @@ const projects = [
     sourceCode: 'https://github.com/Gmanlove',
   },
   {
-    name: 'DREAMVIEW SUMMIT',
+    name: 'DREAMVIEW ',
     des: ['Canopy', 'Frontend', '2023'],
     img: './images/second.png',
     description:

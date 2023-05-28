@@ -51,7 +51,7 @@ const projects = [
     sourceCode: 'https://github.com/Gmanlove',
   },
   {
-    name: 'SPACE TRAVELER HUB',
+    name: 'SPACE TRAVEL',
     des: ['Canopy', 'backend', '2023'],
     img: './images/third.png',
     description:

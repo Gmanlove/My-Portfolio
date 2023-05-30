@@ -258,7 +258,6 @@ header {
   align-items: center;
   padding: 1px;
   position: fixed;
-  background-image: -webkit-linear-gradient(65deg, #d63bb7 40%, #46dd39 60%);
 }
 
 .nav-logo a {

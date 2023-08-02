@@ -58,6 +58,7 @@ body {
   }
   .oge{
     color: #000;
+    font-size: 20px;
   }
 
   .arrow {
@@ -186,6 +187,7 @@ body {
     height: 0%;
     color: #344563;
     text-decoration: none;
+    font-size: 20px;
   }
 
   .source-code a {
@@ -262,7 +264,9 @@ header {
   padding: 1px;
   position: fixed;
 }
-
+.nav-list {
+  font-size: 22px;
+}
 .nav-logo a {
   width: 76px;
   height: 20px;
@@ -411,7 +415,7 @@ section {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   color: #344563;
 }
@@ -493,7 +497,7 @@ section {
   font-style: normal;
   line-height: 16px;
   color: #424242;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .card-title {
@@ -506,7 +510,7 @@ section {
 }
 
 .card-lists p {
-  font-size: 13px;
+  font-size: 20px;
   color: #424242;
   padding: 8px 0;
   font-weight: 600;
@@ -523,7 +527,7 @@ section {
 }
 
 .card-note p {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -591,7 +595,7 @@ button {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   color: #344563;
 }
@@ -899,6 +903,7 @@ button:active {
   }
   .oge{
     color: #000;
+    font-size: 20px;
   }
 
   .paragraph-description-desktop {

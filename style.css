@@ -54,11 +54,14 @@ body {
   .framework-list {
     display: none;
     color: #5d39dd;
-    background-color: bisque;
+    background-color: white;
+  }
+  .oge{
+    color: #000;
   }
 
   .arrow {
-    border: 2px solid red;
+    border: 2px solid;
   }
 
   .few {
@@ -892,7 +895,10 @@ button:active {
   .framework-list {
     display: none;
     color: #5d39dd;
-    background-color: bisque;
+    background-color: white;
+  }
+  .oge{
+    color: #000;
   }
 
   .paragraph-description-desktop {
@@ -1151,7 +1157,7 @@ button:active {
   }
 
   .arrow {
-    border: 2px solid red;
+    border: 2px solid;
   }
 
   .about {

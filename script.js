@@ -213,19 +213,24 @@ for (let j = 0; j < projects.length; j += 1) {
   });
 }
 
-const arrow = document.getElementById('arrow');
+// Initial display for frameworkList
 const frameworkList = document.getElementById('frameworkList');
+frameworkList.style.display = 'block'; // Set initial display to block
 
+const arrow = document.getElementById('arrow');
 arrow.addEventListener('click', () => {
   frameworkList.style.display = frameworkList.style.display === 'none' ? 'block' : 'none';
 });
 
-const arrow2 = document.getElementById('arrow2');
+// Initial display for skillList
 const skillList = document.getElementById('skillList');
+skillList.style.display = 'block'; // Set initial display to block
 
+const arrow2 = document.getElementById('arrow2');
 arrow2.addEventListener('click', () => {
   skillList.style.display = skillList.style.display === 'none' ? 'block' : 'none';
 });
+
 
 // ---------------------------Contact form validation---------------------
 const formContact = document.getElementById('form');

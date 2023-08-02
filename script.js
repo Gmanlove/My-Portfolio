@@ -35,7 +35,7 @@ const projects = [
     technologies: ['HTML', 'CSS', 'React and Redux'],
     technologies1: ['Javascript', 'ruby', 'Bootstrap'],
     liveVersion: 'https://graceful-treacle-9ae10f.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove',
+    sourceCode: 'https://github.com/Gmanlove/react-capstone-metrics-webapp',
   },
   {
     name: 'DREAMVIEW ',
@@ -48,7 +48,7 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     technologies1: ['React-redux', 'ruby', 'Bootstap'],
     liveVersion: 'https://fabulous-empanada-256871.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove',
+    sourceCode: 'https://github.com/Gmanlove/FIRST-CAPSTONE-PROJECT',
   },
   {
     name: 'SPACE TRAVEL',
@@ -58,23 +58,36 @@ const projects = [
     'The Space Travelers Hub is a service through which SpaceX astronauts can book rockets or schedule missions for a particular timeframe.',
     desc1:
       'The Space Travelers Hub is a service through which SpaceX astronauts can book rockets or schedule missions for a particular timeframe.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'React'],
     technologies1: ['React-redux', 'ruby', 'Bootstrap'],
     liveVersion: 'https://inspiring-maamoul-159777.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove',
+    sourceCode: 'https://github.com/Gmanlove/Space-Traveler-s-Hub',
   },
   {
-    name: 'POKEMON APP',
+    name: 'Budget App',
     des: ['Canopy', 'backend', '2023'],
-    img: './images/fourth.png',
+    img: './images/budget.jpeg',
     description:
-      'A pokemon website is designed for children and for adults who used to love pokemon games in their childhood. From the website, users could access the different creatures which inhabit the world of pokemon games',
+      'The Budget App is a classic example of a budget website, that helps you keep track of your expenses.It provides a user-friendly interface that allows individuals to record their expenses in different categories and track them over time. The app is built using Ruby on Rails and postgrel database',
     desc1:
       'Users can give like for the creatures which they liked most and can also write their insights in the comments portion.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['Ruby', 'Ruby on rails', 'Postgrel SQL'],
     technologies1: ['github', 'ruby', 'Bootsrap'],
-    liveVersion: 'https://resilient-smakager-5c90ff.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove',
+    liveVersion: 'https://budget-expens4.onrender.com/',
+    sourceCode: 'https://github.com/Gmanlove/Budget-app',
+  },
+  {
+    name: 'Pokemon App',
+    des: ['Canopy', 'Frontend', '2023'],
+    img: './images/fourth.png',
+    description:
+      'A pokemon website is designed for children and for adults who used to love pokemon games in their childhood. From the website, users could access the different creatures which inhabit the world of pokemon games. Users can give like for the creatures which they liked most and can also write their insights in the comments portion.',
+    desc1:
+      'Users can give like for the creatures which they liked most and can also write their insights in the comments portion.',
+    technologies: ['HTML', 'Javascript', 'Css'],
+    technologies1: ['github', 'ruby', 'Bootsrap'],
+    liveVersion: 'https://resilient-smakager-5c90ff.netlify.app/',
+    sourceCode: 'https://github.com/Gmanlove/JavaScript-capstone-group-project',
   },
 ];
 

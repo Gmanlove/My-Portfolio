@@ -35,7 +35,7 @@ const projects = [
     technologies: ['HTML', 'CSS', 'React and Redux'],
     technologies1: ['Javascript', 'ruby', 'Bootstrap'],
     liveVersion: 'https://graceful-treacle-9ae10f.netlify.app',
-    sourceCode: 'https://github.com/Gmanlove/react-capstone-metrics-webapp',
+    sourceCode: 'https://stirring-capybara-9170e3.netlify.app/',
   },
   {
     name: 'DREAMVIEW ',

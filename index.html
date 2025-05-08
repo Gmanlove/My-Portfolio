@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="description" content="Emmanuel Obi - Software Developer Portfolio showcasing web development projects and skills">
+    <meta name="keywords" content="software developer, web development, portfolio, Emmanuel Obi, frontend, backend">
+    <meta name="author" content="Emmanuel Obi">
+    <title>Emmanuel Obi | Software Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -16,13 +20,20 @@
   </head>
 
   <body>
+    <!-- Page loader with improved animation -->
+    <div class="page-loader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <p>Loading amazing work...</p>
+      </div>
+    </div>
+    
     <header>
       <div class="nav-logo">
-        <a href="./index.html"><img src="images/20230407_190846.png" alt="My logo"></a>
+        <a href="./index.html"><img src="images/20230407_190846.png" alt="Emmanuel Obi's logo"></a>
       </div>
 
       <!---------- Desktop menu-------------->
-
       <nav class="desktop-menu">
         <ul class="flex">
           <li><a href="#cards" class="nav-list">Portfolio</a></li>
@@ -32,53 +43,55 @@
       </nav>
 
       <div class="nav-links">
-        <a href="#"
-          ><img
+        <a href="#" aria-label="Menu">
+          <img
             src="images/icon-menu.png"
             alt="navigation icon"
             class="humberger"
           />
-          <i class="fa-solid fa-xmark close"></i>
+          <i class="fa-solid fa-xmark close" aria-hidden="true"></i>
         </a>
       </div>
     </header>
 
     <main class="main-card">
-      <section class="image">
+      <section class="image" id="home">
         <div class="main-container">
-          <div class="intro-text">
+          <div class="intro-text animate-fadeIn">
             <h1>I'm Emmanuel <br />Glad to see you!</h1>
             <p>
               I'm a seasoned software developer specializing in crafting top-notch products, features, and websites. With two years in the industry, I've transformed ideas into elegant, functional solutions that users love.
-
-My portfolio showcases a range of successful projects, where I highlight some of my accomplishments. Away from the keyboard, I enjoy watching playing football.
-
-If you're ready to turn your project into a reality, I'm your go-to developer. Let's chat!
+            </p>
+            <p>
+              My portfolio showcases a range of successful projects, highlighting some of my accomplishments. Away from the keyboard, I enjoy watching and playing football.
+            </p>
+            <p>
+              If you're ready to turn your project into a reality, I'm your go-to developer. Let's chat!
             </p>
           </div>
-          <div class="intro-items">
-            <a href="#">LET'S CONNECT</a>
+          <div class="intro-items animate-fadeIn delay-200">
+            <a href="#contact">LET'S CONNECT</a>
             <div class="intro-connect">
               <ul class="list-items">
                 <li>
-                  <a href="https://twitter.com/brightgman2" target="_blank" rel="noopener">
-                    <img src="images/twitter.png" alt=" My Social Media" /></a>
+                  <a href="https://twitter.com/brightgman2" target="_blank" rel="noopener" aria-label="Twitter">
+                    <img src="images/twitter.png" alt="Twitter" /></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/emmanuelgozieobi/" target="_blank" rel="noopener">
-                    <img src="images/Linkedin icon.svg" alt="My Social Media" /></a>
+                  <a href="https://www.linkedin.com/in/emmanuelgozieobi/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/Linkedin icon.svg" alt="LinkedIn" /></a>
                 </li>
                 <li>
-                  <a href="https://medium.com/@emmagmanc" target="_blank" rel="noopener">
-                    <img src="images/medium.png" alt="My Social Media" /></a>
+                  <a href="https://medium.com/@emmagmanc" target="_blank" rel="noopener" aria-label="Medium">
+                    <img src="images/medium.png" alt="Medium" /></a>
                 </li>
                 <li>
-                  <a href="https://github.com/Gmanlove" target="_blank" rel="noopener">
-                    <img src="images/github.png" alt="My Social Media" /></a>
+                  <a href="https://github.com/Gmanlove" target="_blank" rel="noopener" aria-label="GitHub">
+                    <img src="images/github.png" alt="GitHub" /></a>
                 </li>
                 <li>
-                  <a href="https://wellfound.com/u/emmanuel-obi-9" target="_blank" rel="noopener">
-                    <img src="images/angellist.png" alt="My Social Media" /></a>
+                  <a href="https://wellfound.com/u/emmanuel-obi-9" target="_blank" rel="noopener" aria-label="Wellfound">
+                    <img src="images/angellist.png" alt="Wellfound" /></a>
                 </li>
               </ul>
             </div>
@@ -87,54 +100,55 @@ If you're ready to turn your project into a reality, I'm your go-to developer. L
       </section>
     </main>
 
-
     <section class="work-cards" id="cards">
-      <div class="project-card" id="workpage"></div>
+      <h2 class="section-title animate-fadeIn">My Recent Projects</h2>
+      <div class="project-card animate-fadeIn" id="workpage"></div>
     </section>
+    
     <!----------About Section------------->
     <section class="about" id="about">
       <div class="about-me flex column">
-        <div class="is-me flex column">
+        <div class="is-me flex column animate-slideInLeft">
           <h2 class="about-text">About <br />Myself</h2>
           <p class="self">
-            Hello I'm a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
+            Hello I'm a software developer! I can help you build a product,
+            feature or website. Look through some of my work and experience! If
             you like what you see and have a project you need coded, don't
-            hestiate to contact me.
+            hesitate to contact me.
           </p>
 
           <div class="intro-items">
-            <a href="#"><h3>LET'S MEET</h3></a>
+            <a href="#contact"><h3>LET'S CONNECT</h3></a>
             <div class="intro-connect">
               <ul class="list-items skill-items">
                 <li>
-                  <a href="https://github.com/Gmanlove" target="_blank" rel="noopener">
-                    <img src="images/github.png" alt=" My Social Media" /></a>
+                  <a href="https://github.com/Gmanlove" target="_blank" rel="noopener" aria-label="GitHub">
+                    <img src="images/github.png" alt="GitHub" /></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/emmanuelgozieobi/" target="_blank" rel="noopener">
-                    <img src="images/Linkedin icon.svg" alt="My Social Media" /></a>
+                  <a href="https://www.linkedin.com/in/emmanuelgozieobi/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/Linkedin icon.svg" alt="LinkedIn" /></a>
                 </li>
                 <li>
-                  <a href="https://wellfound.com/u/emmanuel-obi-9" target="_blank" rel="noopener">
-                    <img src="images/angellist.png" alt="My Social Media" /></a>
+                  <a href="https://wellfound.com/u/emmanuel-obi-9" target="_blank" rel="noopener" aria-label="Wellfound">
+                    <img src="images/angellist.png" alt="Wellfound" /></a>
                 </li>
                 <li>
-                  <a  href="https://twitter.com/brightgman2" target="_blank" rel="noopener">
-                    <img src="images/twitter.png" alt="My Social Media" /></a>
+                  <a href="https://twitter.com/brightgman2" target="_blank" rel="noopener" aria-label="Twitter">
+                    <img src="images/twitter.png" alt="Twitter" /></a>
                 </li>
                 <li>
-                  <a href="https://medium.com/@emmagmanc" target="_blank" rel="noopener">
-                    <img src="images/medium.png" alt="My Social Media" /></a>
+                  <a href="https://medium.com/@emmagmanc" target="_blank" rel="noopener" aria-label="Medium">
+                    <img src="images/medium.png" alt="Medium" /></a>
                 </li>
               </ul>
             </div>
           </div>
-          <a href="images/Resume.pdf" target="_blank">
+          <a href="images/Resume.pdf" target="_blank" rel="noopener" class="resume-link">
             <button type="button">Get my resume</button></a>
           
         </div>
-        <div class="knowdge flex column">
+        <div class="knowdge flex column animate-slideInRight">
           <ul>
             <li>
               <div class="know flex column">
@@ -144,15 +158,15 @@ If you're ready to turn your project into a reality, I'm your go-to developer. L
                 </p>
                 <ul class="know-sec flex column">
                   <li class="know-list flex">
-                    <img src="images/javaScript.png" alt="js logo" />
+                    <img src="images/javaScript.png" alt="JavaScript logo" />
                     <p class="job-text">JavaScript</p>
                   </li>
                   <li class="know-list flex">
-                    <img src="images/design+development+facebook+framework+mobile+react+icon-1320165723839064798.png" alt="html logo" class="few" />
+                    <img src="images/design+development+facebook+framework+mobile+react+icon-1320165723839064798.png" alt="React logo" class="few" />
                     <p class="job-text">REACT</p>
                   </li>
                   <li class="know-list flex">
-                    <img src="images/ruby.png" alt="css logo" class="few" />
+                    <img src="images/ruby.png" alt="Ruby logo" class="few" />
                     <p class="job-text">RUBY</p>
                   </li>
                 </ul>
@@ -161,16 +175,13 @@ If you're ready to turn your project into a reality, I'm your go-to developer. L
             <li>
               <div class="know">
                 <p class="know-text flex">
-                  <span class="text">Frameworks</span
-                  ><span class="arrow" id="arrow" >></span>
+                  <span class="text">Frameworks</span>
+                  <span class="arrow" id="arrow" aria-label="Toggle frameworks">></span>
                 </p>
                 <ul class="framework-list" id="frameworkList">
                   <li class="oge">Bootstrap</li>
                   <li class="oge">Ruby on Rails</li>
                   <li class="oge">React</li>
-                  
-
-                  <!-- Add more frameworks as needed -->
                 </ul>
               </div>
             </li>
@@ -178,46 +189,18 @@ If you're ready to turn your project into a reality, I'm your go-to developer. L
               <hr />
             </div>
 
-
             <li>
               <div class="know">
                 <p class="know-text flex">
-                  <span class="text"><strong>Skills</strong></span> <!-- Apply <strong> tag for bold -->
-                  <span class="arrow" id="arrow2">></span>
+                  <span class="text"><strong>Skills</strong></span>
+                  <span class="arrow" id="arrow2" aria-label="Toggle skills">></span>
                 </p>
                 <ul class="framework-list" id="skillList">
-                  
-                  <li>
-                    <strong>Communication and Collaboration:</strong> <!-- Apply <strong> tag for bold -->
-                    <ul class="oge">
-                      <li>Verbal and Written Communication</li>
-                      <li>Teamwork</li>
-                      <li>Problem-Solving</li>
-                      <li>Time Management</li>
-                      <li>Code Review</li>
-                      <li>Active Listening</li>
-                      <!-- Add more skills here if needed -->
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Web Development:</strong> <!-- Apply <strong> tag for bold -->
-                    <ul class="oge">
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>React</li>
-                      <li>Ruby on Rails</li>
-                    
-                      <!-- Add more web development skills here if needed -->
-                    </ul>
-                  </li>
+                  <!-- Skill bars will be added by JavaScript -->
                 </ul>
               </div>
             </li>
             
-            
-            
-
             <div class="arrow-line">
               <hr />
             </div>
@@ -229,25 +212,26 @@ If you're ready to turn your project into a reality, I'm your go-to developer. L
     <!-----------------------Contact me section------------------------------>
     <section class="contact-section" id="contact">
       <div class="contact-hold">
-        <div class="contact-now">
+        <div class="contact-now animate-fadeIn">
           <h2>Contact me</h2>
           <p>
             If you have an application you are interested in developing, a
-            features that you need built or a project that need coding. I'd love
+            feature that you need built or a project that needs coding, I'd love
             to help with it.
           </p>
         </div>
-        <div class="contact-now-form">
+        <div class="contact-now-form animate-fadeIn delay-200">
           <form
             action="https://formspree.io/f/mnqrekzw"
             method="post"
-            onsubmit="return validateEmail()"
+            id="contactForm"
           >
             <div class="input-username">
-              <label hidden id="mylabel" for="username">Username</label>
+              <label for="username" class="sr-only">Username</label>
               <input
                 type="text"
                 name="username"
+                id="username"
                 class="input"
                 placeholder="Username"
                 maxlength="30"
@@ -256,12 +240,12 @@ If you're ready to turn your project into a reality, I'm your go-to developer. L
             </div>
             <br />
             <div class="email-input">
-              <label hidden id="mylabel" for="email">Email</label>
+              <label for="email" class="sr-only">Email</label>
               <input
                 type="email"
                 name="email"
                 class="input"
-                placeholder="enter email"
+                placeholder="Enter email"
                 id="email"
                 size="64"
                 maxlength="64"
@@ -271,10 +255,10 @@ If you're ready to turn your project into a reality, I'm your go-to developer. L
             <br />
 
             <div class="text-area">
-              <label hidden id="mylabel" for="message">Message</label>
+              <label for="message" class="sr-only">Message</label>
               <textarea
                 name="message"
-                type="text"
+                id="message"
                 class="input-textarea"
                 cols="30"
                 maxlength="500"
@@ -291,89 +275,22 @@ If you're ready to turn your project into a reality, I'm your go-to developer. L
       </div>
     </section>
 
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Emmanuel Obi. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#cards">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
     <div class="modal" id="modal1">
-      <div id="popup-modal" class="pop-content">
-        <div class="headline-popup">
-          <h1>Tonic</h1>
-          <a href="#" role="button" onclick="closePopup()">
-            <div class="popup-clsbtn">x</div>
-          </a>
-        </div>
-      </div>
-      <ul class="small-tags">
-        <li class="canopy-sm-tag">CANOPY</li>
-        <li>
-          <div class="round-popup"></div>
-        </li>
-        <li class="second-sm-tag">Back End Dev</li>
-        <li>
-          <div class="round-popup"></div>
-        </li>
-        <li class="second-sm-tag">2015</li>
-      </ul>
-      <div class="popup-image-container">
-        <img src="images/Snapshoot Portfolio.png" alt="pop-image" />
-      </div>
-      <div class="popup-mobile-container"></div>
-      <div class="buttom-content-container">
-        <div class="paragraph-description">
-          <p class="paragraph-description-desktop">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it 1960s with the releaLorem Ipsum is simply dummy text of
-            the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it 1960s with the
-            releorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </div>
-        <div class="action-content">
-          <div class="popup-tags">
-            <ul class="first">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>javascript</li>
-            </ul>
-            <ul class="second">
-              <li>github</li>
-              <li>ruby</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-          <div class="divider-popup">
-            <img src="./images/Vector 4.png" alt="Divider popup" />
-          </div>
-          <div class="popup-button-action">
-            <button type="submit" id="seeLiveBtn">
-              <div class="source-code">
-                <a href="">See live </a>
-              </div>
-              <div class="deploy-icon">
-                <img
-                  src="./images/deploy.svg"
-                  alt="deployment icon"
-                  class="deploy-icon-popup"
-                />
-              </div>
-            </button>
-            <button type="submit" class="submit-github" id="seeSourceBtn">
-              <div class="live-version">
-                <a href="">See Source </a>
-              </div>
-              <div class="github-img">
-                <img
-                  src="./images/github-popup.svg"
-                  alt="github icon"
-                  class="github-icon-popup"
-                />
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
+      <!-- Modal content will be dynamically inserted by JavaScript -->
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
